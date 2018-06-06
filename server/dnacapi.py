@@ -75,11 +75,11 @@ def getNetworkDevice(timestamp,searchBy,identifier,apiObj):
         if networkDevJson is not None:
             if 'response' in networkDevJson:
                 resp = networkDevJson['response']
-                networkDevDetail = DnacNetworkDeviceClass(resp['nwDeviceName'],resp['serialNumber'],resp['managementIpAddr'],resp['opState'],
+                networkDevDetail = DnacNetworkDeviceClass(resp['nwDeviceName'],resp['managementIpAddr'],
                                                           resp['platformId'], resp['nwDeviceId'], resp['sysUptime'],
-                                                          resp['mode'],resp['resetReason'],resp['nwDeviceRole'],resp['upTime'],resp['nwDeviceFamily'],
-                                                          resp['macAddress'], resp['connectedTime'], resp['softwareVersion'],
-                                                          resp['subMode'],resp['nwDeviceType'], resp['overallHealth'], resp['memoryScore'],resp['cpuScore'])
+                                                          resp['nwDeviceRole'],resp['nwDeviceFamily'],
+                                                          resp['macAddress'], resp['softwareVersion'],
+                                                          resp['nwDeviceType'], resp['overallHealth'], resp['memoryScore'],resp['cpuScore'])
 
 
                 return networkDevDetail

@@ -32,25 +32,18 @@ class DnacClientClass(object):
 
 
 class DnacNetworkDeviceClass(object):
-    def __init__(self, name, serialNum, ip, opState, platformId, nwDeviceId, sysUptime,
-                 mode, resetReason, nwDeviceRole, upTime, nwDeviceFamily, macAddress, connectedTime, softwareVersion,
-                 subMode, nwDeviceType, overallHealth, memoryScore, cpuScore):
+    def __init__(self, name, ip, platformId, nwDeviceId, sysUptime
+                 , nwDeviceRole, nwDeviceFamily, macAddress, softwareVersion,
+                 nwDeviceType, overallHealth, memoryScore, cpuScore):
         self.name = name
-        self.serialNum = serialNum
         self.ip = ip
-        self.opState = opState
         self.platformId = platformId
         self.nwDeviceId =  nwDeviceId
-        self.systemUpTime =  sysUptime
-        self.mode =  mode
-        self.resetReason =  resetReason
+        self.upTime =  sysUptime
         self.nwDeviceRole =  nwDeviceRole
-        self.upTime = upTime
         self.deviceFamily = nwDeviceFamily
         self.macAddress = macAddress
-        self.connectedTime = connectedTime
         self.softwareVersion = softwareVersion
-        self.submode = subMode
         self.nwDeviceType = nwDeviceType
         self.overallHealth = overallHealth
         self.memoryScore = memoryScore

@@ -38,49 +38,62 @@ https://developer.ciscospark.com/endpoint-webhooks-post.html
 
 Make sure that the bearer token used in creating the webhook is the bearer token of the bot. 
 You’ll need to know the ‘roomId’ of the room the bot is hanging out in, and you’ll need to know your own ‘targetUrl’ (the Ngrok link etc.); you’ll also want to set the ‘resource’ to messages and the ‘event’ to created. Here’s what the Webhook should look like once it’s been created:
-
-{
-	"items": [
-		{
-			"id": "<Bearer-Token>",
-			"name": "botaDna",
-			"targetUrl": "http://b4bcf212.ngrok.io",
-			"resource": "messages",
-			"event": "created",
-			"orgId": "Y2lzY29zcGFyazovL3VzL09SR0FOSVpBVElPTi8xZWI2NWZkZi05NjQzLTQxN2YtOTk3NC1hZDcyY2FlMGUxMGY",
-			"createdBy": "Y2lzY29zcGFyazovL3VzL1BFT1BMRS9lZTY1ZTZiMC1kNzU2LTQxZWMtYjg3MC1hOTNkMjY3OTBhMDk",
-			"appId": "Y2lzY29zcGFyazovL3VzL0FQUExJQ0FUSU9OL0MyNzljYjMwYzAyOTE4MGJiNGJkYWViYjA2MWI3OTY1Y2RhMzliNjAyOTdjODUwM2YyNjZhYmY2NmM5OTllYzFm",
-			"ownedBy": "creator",
-			"status": "active",
-			"created": "2018-05-11T05:37:18.828Z"
-		}
-	]
-}
-
+	
+```
+	{
+		"items": [
+			{
+				"id": "<Bearer-Token>",
+				"name": "botaDna",
+				"targetUrl": "http://b4bcf212.ngrok.io",
+				"resource": "messages",
+				"event": "created",
+				"orgId": "Y2lzY29zcGFyazovL3VzL09SR0FOSVpBVElPTi8xZWI2NWZkZi05NjQzLTQxN2YtOTk3NC1hZDcyY2FlMGUxMGY",
+				"createdBy": "Y2lzY29zcGFyazovL3VzL1BFT1BMRS9lZTY1ZTZiMC1kNzU2LTQxZWMtYjg3MC1hOTNkMjY3OTBhMDk",
+				"appId": "Y2lzY29zcGFyazovL3VzL0FQUExJQ0FUSU9OL0MyNzljYjMwYzAyOTE4MGJiNGJkYWViYjA2MWI3OTY1Y2RhMzliNjAyOTdjODUwM2YyNjZhYmY2NmM5OTllYzFm",
+				"ownedBy": "creator",
+				"status": "active",
+				"created": "2018-05-11T05:37:18.828Z"
+			}
+		]
+	}
+```
 
 ## Running the Code
 
 #### 1.Clone the code
+
+```
 git clone https://github3.cisco.com/amthyaga/app-dev-dnac-sparkbot.git
+```
 
 #### 2.Create a Python Virtual Environment
 
+```
 python3 -m venv venv
 source venv/bin/activate
+```
 
 #### 3.Setup the dependencies
+
+```
 pip3 install -r requirements.txt
+```
 
 #### 4.Configure the Bot Bearer Token, Bot email etc on the ./server/botADna.py
 
+```
 bearer = "YjExN......."
 bot_email = 'bot-my-email@sparkbot.io'
 bot_name = "bot-my-name"
+```
 
 #### 4.Run the application using python3 to start the server
 
+```
 cd server
 python3 botADna.py
+```
 
 
 # Let's Chat

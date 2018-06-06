@@ -40,9 +40,9 @@ app = Flask(__name__, static_folder='../static/dist', template_folder='../static
 '''
 Set the bearer token, email ,name etc
 '''
-bearer = "YjExNjIzOTctNDNhNy00NTQ2LThhYTctOGQ0ZjEyNGVhMjFhNGQ2ZTQ4NzAtOGFj"
-bot_email = 'bot-a-dna@sparkbot.io'
-bot_name = "bot-a-dna"
+bearer = "Yj...."
+bot_email = 'bot...@sparkbot.io'
+bot_name = "bot...."
 line_separator = "\n******************************************************************************************\n"
 
 #Global API Object

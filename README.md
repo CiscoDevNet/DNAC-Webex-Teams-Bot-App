@@ -62,15 +62,23 @@ You’ll need to know the ‘roomId’ of the room the bot is hanging out in, an
 ## Running the Code
 
 #### 1.Clone the code
+
+```
 git clone https://github3.cisco.com/amthyaga/app-dev-dnac-sparkbot.git
+```
 
 #### 2.Create a Python Virtual Environment
 
+```
 python3 -m venv venv
 source venv/bin/activate
+```
 
 #### 3.Setup the dependencies
+
+```
 pip3 install -r requirements.txt
+```
 
 #### 4.Configure the Bot Bearer Token, Bot email etc on the ./server/botADna.py
 
@@ -82,8 +90,10 @@ bot_name = "bot-my-name"
 
 #### 4.Run the application using python3 to start the server
 
+```
 cd server
 python3 botADna.py
+```
 
 
 # Let's Chat

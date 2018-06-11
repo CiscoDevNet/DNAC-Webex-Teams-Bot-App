@@ -4,7 +4,7 @@ The Bot provides a chat like interface to give visibility into your network to r
 
 
 
-![Alt text](server/sampleScreen.png?raw=true "Sample Chat Session")
+![Alt text](https://github.com/CiscoDevNet/DNAC-Webex-Teams-Bot-App/blob/master/server/sampleScreen.png?raw=true "Sample Chat Session")
 
 
 # Making the App work
